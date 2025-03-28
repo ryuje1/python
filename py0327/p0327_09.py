@@ -39,3 +39,4 @@ for n in range(1, 11):
         
 print("도전 횟수 : {}, 입력 숫자 : {}".format(n, num))
 print("랜덤 숫자 : {}".format(ran_num))
+
