@@ -109,4 +109,4 @@ while True:
         
     elif choice == 0:   # 프로그램 종료
         print("프로그램 종료")
-        break
+        break 

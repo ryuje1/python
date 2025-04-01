@@ -20,7 +20,7 @@ while True:
     # 학생 성적 입력
     if choice == 1:
         while True: # 0번 누르기 전까지 계속 학생 성적 입력하도록 반복
-            print("[ 학생 성적 입력 ]")
+            print("[ 학생 성적 입력 ]") 
             no = count
             name = input("{}번 학생 이름을 입력해주세요.     (0. 이전화면 이동)  ".format(no))
             if name == '0': break

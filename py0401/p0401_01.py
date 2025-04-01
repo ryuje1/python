@@ -65,4 +65,4 @@ while True:
                 stop = 1
                 break   # break 입력하지 않아도 프로그램은 돌아감. 그 이후 비교를 안돌리기 위함.
                 # break -> for j in range(5)만 빠져나와서 for i in range(5)로 돌아감
-        if stop == 1: break
+        if stop == 1: break 

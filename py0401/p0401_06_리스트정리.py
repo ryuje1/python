@@ -66,3 +66,4 @@ print(s_list)
 # print(s_list)
 s_list.reverse()            # 역순 정렬, 높은 순 정렬
 print(s_list)
+ 

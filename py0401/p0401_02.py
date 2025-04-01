@@ -20,4 +20,4 @@ while True:
         print(f"개수 : {count}")
         break
     
-    print(f"현재 X 개수 : {count}")
+    print(f"현재 X 개수 : {count}") 

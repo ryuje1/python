@@ -45,7 +45,7 @@ if 'name' in dic:
 if 'no' in dic:
     print(f"no : {dic['no']}")
 else:
-    print("no 키는 존재하지 않습니다.")
+    print("no 키는 존재하지 않습니다.") 
 
 
 

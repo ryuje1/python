@@ -18,7 +18,7 @@ choice = int(input("원하는 프로그램 번호를 입력하세요.  "))
 
 # 학생 성적 입력
 if choice == 1:
-    print("[ 학생 성적 입력 ]")
+    print("[ 학생 성적 입력 ]") 
     no = count
     name = input("{}번 학생 이름을 입력해주세요.  ".format(no))
     # kor = int(input("국어 성적을 입력해주세요.  "))

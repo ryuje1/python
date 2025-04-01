@@ -9,7 +9,7 @@ print(dict(zip(n_list, t_list)))
 
 # 튜플 => () 값 수정불가 / 리스트 => [] 값 수정가능 값 수정가능 유무 빼고 똑같음
 # 딕셔너리 {} 값 수정가능
-# tuple_list = list(zip(n_list, t_list))
+# tuple_list = list(zip(n_list, t_list)) 
 
 
 # students = {"no":1, "name":"홍길동", "kor":100}
