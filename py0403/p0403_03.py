@@ -55,7 +55,7 @@ for i in youCard:
 #         score['myWin'] += 1
 #     elif myCard[i]['no'] < youCard[i]['no']:
 #         score['youWin'] += 1
-#     elif myCard[i]['no'] < youCard[i]['no']:
+#     elif myCard[i]['no'] == youCard[i]['no']:
 #         score['draw'] += 1
 # print("[ 카드 승부 확인 ]")
 # print("나의 승리 : {}번, 상대 승리 : {}번, 무승부 : {}번".format(score['myWin'], score['youWin'], score['draw']))
@@ -63,11 +63,11 @@ for i in youCard:
 
 score = [0]*5
 for i in range(5):
-    if myCard[i]['no'] > youCard[i]['no']:
+    if myCard[i]['no'] > youCard[i]['no']:   # 내가 이기면 2
         score[i] = 2
-    elif myCard[i]['no'] < youCard[i]['no']:
+    elif myCard[i]['no'] < youCard[i]['no']: # 상대방이 이기면 1
         score[i] = 1
-    else:
+    else:                                    # 비기면 0
         score[i] = 0
 print("[ 카드 승부 확인 ]")
 print("승리 : {}번, 패배 : {}번, 무승부 : {}번".format(score.count(2), score.count(1), score.count(0)))
@@ -75,7 +75,8 @@ print("승리 : {}번, 패배 : {}번, 무승부 : {}번".format(score.count(2),
 # 승리한 카드 출력
 print("[ 승리 카드 ]")
 for i, c in enumerate(myCard):
-    print(f"[{sh[c['shape']]}, {no[c['no']]}]", end=" ")
+    if score[i] == 2:
+        print(f"[{sh[c['shape']]}, {no[c['no']]}]", end=" ")
     
 # for i, c in enumerate(myCard):
 #     if score[i] == 2:

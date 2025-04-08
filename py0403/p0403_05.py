@@ -5,7 +5,6 @@ import random
 # 당첨번호 확인
 # 출력
 # p0403_04.py 연습
-## X 표시만 안됨.........
 
 my_lotto = [0]*6
 win_lotto = []
@@ -41,7 +40,8 @@ while True:
             # 로또 순번 출력
             for i in range(45):
                 if i%7 == 0: print()
-                print(lotto[i], end="\t")
+                print(lotto2[i], end="\t")
+                
             print()
             # ------------
             
@@ -55,7 +55,7 @@ while True:
             temp = 0
             for i in lotto2:
                 if i == choice:
-                    lotto2[i-1] = "X"   # i-1 이유?
+                    lotto2[i-1] = "X"
                     my_lotto[count] = choice    # append와 동일. append 보다 속도 빠름. my_lotto에 choice 값 입력
                     count += 1          # 로또번호 입력개수 증가
                     temp = 1            # 존재하는지 확인
